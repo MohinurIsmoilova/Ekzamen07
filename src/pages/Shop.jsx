@@ -7,7 +7,6 @@ import link from "../assets/link.svg";
 import mes from "../assets/mes.svg";
 import im from "../assets/img5.png";
 import SearchIcon from "@mui/icons-material/Search";
-import { SecondShop } from "../components/SecondShop";
 import { NavLink } from "react-router-dom";
 import { SecondCarousel } from "./SecondCarousel";
 import { useSelector } from "react-redux";
@@ -22,7 +21,7 @@ export const Shop = () => {
         <div className="flex space-x-4 mt-20">
           <div className="flex space-x-20 w-[500%] mt-10">
             <div>
-              <div>
+              <div className="space-x-2">
                 <NavLink to="/" className="font-semibold hover:font-bold">
                   Home
                 </NavLink>
@@ -32,8 +31,7 @@ export const Shop = () => {
                 <NavLink
                   to="/shop/shoppingcard"
                   className="font-semibold hover:font-bold"
-                >
-                  /ShoppingCard
+                > /ShoppingCard
                 </NavLink>
               </div>
 
@@ -183,7 +181,6 @@ export const Shop = () => {
             </div>
           </div>
         </div>
-        <SecondShop />
         <SecondCarousel />
       </div>
     </>

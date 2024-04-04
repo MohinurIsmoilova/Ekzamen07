@@ -21,7 +21,7 @@ export const HomePageSide = () => {
   return (
     <div className="container">
       <div
-        className="carousel mt-20"
+        className="carousel mt-20 object-cover"
         style={{
           backgroundImage: `url(${productData[currentImageIndex]?.image_url})`, // Using product image URL for background
           backgroundSize: "cover",
@@ -51,7 +51,7 @@ export const HomePageSide = () => {
           </div>
         </div>
 
-        <div className="mt-16 ml-[617px]">
+        <div className="mt-16 ml-[560px]">
           <img src={img} alt="img" />
         </div>
       </div>

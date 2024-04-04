@@ -34,47 +34,47 @@ export const Categories = () => {
           <div>
             <ul className="leading-10">
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   House Plants
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Potter Plants
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Seeds
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Small Plants
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Big Plants
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Succulents
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Trerrariums
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Gardening
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   Accessories
                 </NavLink>
               </li>
@@ -84,47 +84,47 @@ export const Categories = () => {
           <div>
             <ul className="leading-10">
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (33)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (12)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (65)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (39)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (23)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (17)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (19)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (13)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
+                <NavLink className="hover:font-semibold font-semibold text-[#3D3D3D] hover:text-green-600">
                   (18)
                 </NavLink>
               </li>
@@ -160,17 +160,17 @@ export const Categories = () => {
           <div>
             <ul className="leading-10">
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold text-[#3D3D3D] font-bold hover:text-green-600">
                   Small
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold text-[#3D3D3D] font-bold hover:text-green-600">
                   Medium
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold text-[#3D3D3D] font-bold hover:text-green-600">
                   Large
                 </NavLink>
               </li>
@@ -180,17 +180,17 @@ export const Categories = () => {
           <div>
             <ul className="leading-10">
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
                   (119)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
                   (86)
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:font-bold hover:text-green-600">
+                <NavLink className="hover:font-bold font-bold text-[#3D3D3D] hover:text-green-600">
                   (78)
                 </NavLink>
               </li>

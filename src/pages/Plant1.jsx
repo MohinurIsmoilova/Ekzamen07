@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -26,22 +27,29 @@ export const Plant1 = ({ currentPage, itemsPerPage, sortType }) => {
   const [likedItems, setLikedItems] = useState({});
 
   useEffect(() => {
+    console.log("work 1");
     let sortedItemsCopy = [...items]; // Create a copy of the items array
     if (sortType === "A-Z") {
       sortedItemsCopy.sort((a, b) =>
         a.common_name.localeCompare(b.common_name),
       );
     } else if (sortType === "Z-A") {
-      sortedItemsCopy.sort((a, b) =>
-        b.common_name.localeCompare(a.common_name),
-      );
+      sortedItemsCopy.reverse();
+      console.log("work");
     }
     setSortedItems(sortedItemsCopy);
-  }, [items, sortType]); // Update when items or sortType change
+  }, [sortType]); // Update when items or sortType change
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = sortedItems.slice(indexOfFirstItem, indexOfLastItem);
+
+  const handleFavoriteClick = (itemId) => {
+    setLikedItems((prevLikedItems) => ({
+      ...prevLikedItems,
+      [itemId]: !prevLikedItems[itemId],
+    }));
+  };
 
   return (
     <div className="container grid grid-cols-3">
@@ -51,11 +59,13 @@ export const Plant1 = ({ currentPage, itemsPerPage, sortType }) => {
             onMouseEnter={() => setHoveredItem(item.id)}
             onMouseLeave={() => setHoveredItem(null)}
           >
-            <img
-              src={item.image_url}
-              alt="img"
-              className="h-[250px] w-[250px] object-cover"
-            />
+            <Link to={`/shop/${item.id}`}>
+              <img
+                src={item.image_url}
+                alt="img"
+                className="h-[250px] w-[250px] object-cover"
+              />
+            </Link>
 
             <div className="relative">
               <div className="absolute left-4 top-[-78px] mt-8 h-[100px] translate-x-[50%]">

@@ -19,7 +19,7 @@ export const All = () => {
 
   const handleSortChange = (event) => {
     const selectedOption = event.target.value;
-
+    console.log("changed");
     if (selectedOption === "A-Z") {
       setSortType("A-Z");
     } else if (selectedOption === "Z-A") {
@@ -65,6 +65,8 @@ export const All = () => {
               </li>
             </ul>
           </div>
+
+
 
           <div className="flex space-x-3">
             <p className="text-[#3D3D3D] text-xl">Sort by:</p>

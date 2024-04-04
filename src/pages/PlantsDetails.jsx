@@ -4,8 +4,6 @@ export const PlantsDetails = () => {
   return (
     <>
     <div className="container">
-        dfgtrswqdeeesdf
-
     </div>
     </>
   )
