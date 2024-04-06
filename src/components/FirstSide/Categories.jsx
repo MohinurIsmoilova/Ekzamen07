@@ -27,7 +27,7 @@ export const Categories = () => {
 
   return (
     <>
-      <div className="container w-[310px]">
+      <div className="container w-[310px] hidden sm:block">
         <h2 className="text-gray-700 font-bold text-xl">Categories</h2>
 
         <div className="flex space-x-[100px] ml-4 mt-3 w-full">

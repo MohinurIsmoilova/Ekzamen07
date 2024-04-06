@@ -66,22 +66,22 @@ export const All = () => {
             </ul>
           </div>
 
-
-
-          <div className="flex space-x-3">
-            <p className="text-[#3D3D3D] text-xl">Sort by:</p>
-            {/* Step 1: Update select element to include onChange event */}
-            <select
-              className="relative bottom-[1px]"
-              onChange={handleSortChange}
-            >
-              <option value="Default sorting" className="text-[#3D3D3D]">
-                A-Z
-              </option>
-              <option value="Default sorting" className="text-[#3D3D3D]">
-                Z-A
-              </option>
-            </select>
+          <div className="hidden sm:block">
+            <div className="flex space-x-3">
+              <p className="text-[#3D3D3D] text-xl">Sort by:</p>
+              {/* Step 1: Update select element to include onChange event */}
+              <select
+                className="relative bottom-[1px]"
+                onChange={handleSortChange}
+              >
+                <option value="A-Z" className="text-[#3D3D3D]">
+                  A-Z
+                </option>
+                <option value="Z-A" className="text-[#3D3D3D]">
+                  Z-A
+                </option>
+              </select>
+            </div>
           </div>
         </div>
 
@@ -107,11 +107,10 @@ export const All = () => {
           )}
         </div>
 
-        <div className="mt-20 ml-[620px]">
+        <div className="mt-20 ml-[620px] hidden sm:block">
           <Stack spacing={2}>
             <Pagination
               count={3}
-              color="success"
               page={currentPage}
               onChange={handleChangePage}
               renderItem={(item) => (
@@ -121,6 +120,14 @@ export const All = () => {
                   sx={{
                     borderRadius: "1px",
                     border: "1px",
+                    "&:hover": {
+                      backgroundColor: "#46A358",
+                      color: "white",
+                    },
+                    "&.Mui-selected": {
+                      backgroundColor: "#46A358",
+                      color: "white",
+                    },
                   }}
                 />
               )}

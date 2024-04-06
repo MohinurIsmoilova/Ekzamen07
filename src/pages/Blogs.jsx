@@ -1,7 +1,14 @@
 import React from 'react'
+import RegisterPage from '../components/FirstSide/RegisterPage'
 
 export const Blogs = () => {
   return (
-    <div>Blogs</div>
+    <>
+    <div className="container">
+      <div className="mt-32">
+        <RegisterPage/>
+      </div>
+    </div>
+    </>
   )
 }

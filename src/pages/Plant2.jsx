@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -6,84 +7,101 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { useDispatch, useSelector } from "react-redux";
 import { addcount } from "../features/cartSlice";
 
-export const Plant2 = ({ currentPage, itemsPerPage }) => {
-    const dispatch = useDispatch();
+export const Plant2 = ({ currentPage, itemsPerPage, sortType }) => {
+  const dispatch = useDispatch();
 
-    const handleAddCart = (data) => {
-      console.log(data);
-      dispatch(
-        addcount({
-          ...data,
-        }),
+  const handleAddCart = (data) => {
+    // console.log(data);
+    dispatch(
+      addcount({
+        ...data,
+      }),
+    );
+    alert("Successfully");
+  };
+
+  const items = useSelector((state) => state.cart.items[0].data);
+
+  const [sortedItems, setSortedItems] = useState([]);
+  const [hoveredItem, setHoveredItem] = useState(null);
+  const [likedItems, setLikedItems] = useState({});
+
+  useEffect(() => {
+    // console.log("work 1");
+    let sortedItemsCopy = [...items]; // Create a copy of the items array
+    if (sortType === "A-Z") {
+      sortedItemsCopy.sort((a, b) =>
+        a.common_name.localeCompare(b.common_name),
       );
-      alert("Successfully");
-    };
+    } else if (sortType === "Z-A") {
+      sortedItemsCopy.reverse();
+      // console.log("work");
+    }
+    setSortedItems(sortedItemsCopy);
+  }, [sortType]); // Update when items or sortType change
 
-    const items = useSelector((state) => state.cart.items[0].data);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = sortedItems.slice(indexOfFirstItem, indexOfLastItem);
 
-    const [hoveredItem, setHoveredItem] = useState(null); // State to track hovered item
-    const [likedItems, setLikedItems] = useState({}); // State to track liked items
-
-    const handleFavoriteClick = (itemId) => {
-      setLikedItems((prevLikedItems) => ({
-        ...prevLikedItems,
-        [itemId]: !prevLikedItems[itemId],
-      }));
-    };
-
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+  const handleFavoriteClick = (itemId) => {
+    setLikedItems((prevLikedItems) => ({
+      ...prevLikedItems,
+      [itemId]: !prevLikedItems[itemId],
+    }));
+  };
 
   return (
-    <>
-      <div className="container grid grid-cols-3">
-        {currentItems.map((item) => (
-          <div className="mt-10" key={item.id}>
-            <div
-              onMouseEnter={() => setHoveredItem(item.id)}
-              onMouseLeave={() => setHoveredItem(null)}
-            >
+    <div className="container grid grid-cols-3">
+      {currentItems.map((item) => (
+        <div className="mt-10" key={item.id}>
+          <div
+            onMouseEnter={() => setHoveredItem(item.id)}
+            onMouseLeave={() => setHoveredItem(null)}
+          >
+            <Link to={`/shop/${item.id}`}>
               <img
                 src={item.image_url}
                 alt="img"
-                className="w-[250px] h-[250px] object-cover"
+                className="h-[250px] w-[250px] object-cover"
               />
+            </Link>
 
-              <div className="relative">
-                <div className="mt-8 h-[100px] absolute top-[-78px] left-4 translate-x-[50%]">
-                  {hoveredItem === item.id && (
-                    <div className="flex space-x-5">
-                      <button onClick={() => handleAddCart(item)}>
-                        <ShoppingCartOutlinedIcon className="text-[#362424] hover:text-[#46A358]" />
-                      </button>
-                      {likedItems[item.id] ? (
-                        <FavoriteIcon
-                          className="text-[#3D3D3D] hover:text-[#46A358] cursor-pointer"
-                          onClick={() => handleFavoriteClick(item.id)}
-                        />
-                      ) : (
-                        <FavoriteBorderOutlinedIcon
-                          className="text-[#3D3D3D] hover:text-[#46A358] cursor-pointer"
-                          onClick={() => handleFavoriteClick(item.id)}
-                        />
-                      )}
-                      <SearchOutlinedIcon className="text-[#3D3D3D] hover:text-[#46A358]" />
-                    </div>
-                  )}
-                </div>
+            <div className="relative">
+              <div className="absolute left-4 top-[-78px] mt-8 h-[100px] translate-x-[50%]">
+                {hoveredItem === item.id && (
+                  <div className="flex space-x-5">
+                    <button onClick={() => handleAddCart(item)}>
+                      <ShoppingCartOutlinedIcon className="text-[#362424] hover:text-[#46A358]" />
+                    </button>
+                    {likedItems[item.id] ? (
+                      <FavoriteIcon
+                        className="cursor-pointer text-[#3D3D3D] hover:text-[#46A358]"
+                        onClick={() => handleFavoriteClick(item.id)}
+                      />
+                    ) : (
+                      <FavoriteBorderOutlinedIcon
+                        className="cursor-pointer text-[#3D3D3D] hover:text-[#46A358]"
+                        onClick={() => handleFavoriteClick(item.id)}
+                      />
+                    )}
+                    <SearchOutlinedIcon className="text-[#3D3D3D] hover:text-[#46A358]" />
+                  </div>
+                )}
+              </div>
 
-                <div className="mt-16">
-                  <p className="text-[#3D3D3D]">{item.common_name}</p>
-                  <h3 className="text-[#46A358] font-semibold">
-                    $ {item.genus_id}
-                  </h3>
-                </div>
+              <div className="mt-16">
+                <p className="text-[#3D3D3D]">{item.common_name}</p>
+                <h3 className="font-semibold text-[#46A358]">
+                  $ {item.genus_id}
+                </h3>
               </div>
             </div>
           </div>
-        ))}
-      </div>
-    </>
+        </div>
+      ))}
+    </div>
   );
 };
+
+export default Plant2;

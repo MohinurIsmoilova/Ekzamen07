@@ -16,8 +16,10 @@ export const Home = () => {
         <Categories />
         <All />
       </div>
-      <FindMore />
-      <OurBlogSide />
+      <div className="hidden sm:block">
+        <FindMore />
+        <OurBlogSide />
+      </div>
     </>
   );
 };

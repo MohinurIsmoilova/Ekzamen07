@@ -13,9 +13,11 @@ export const Layout = () => {
       <div className="container">
         <Header />
         <Outlet />
-        <GardenSide />
-        <FirstFooterSide />
-        <SecondFooterSide />
+        <div className="hidden sm:block">
+          <GardenSide />
+          <FirstFooterSide />
+          <SecondFooterSide />
+        </div>
       </div>
     </>
   );

@@ -46,28 +46,29 @@ export const SecondCarousel = () => {
   return (
     <>
       <div className="container">
-        <div className="mt-10 relative right-4">
-          <h2 className="text-[#46A358] text-xl font-semibold">
-            Releted Products
-          </h2>
-          <div className="w-[1100px] h-[1px] bg-slate-100 mt-4"></div>
-          <Slider {...settings}>
-            {items.map((item) => (
-              <div className="mt-10" key={item.id}>
-                <img
-                  src={item.image_url}
-                  alt="img"
-                  className="w-[250px] h-[250px] object-cover"
-                />
-                <div className="mt-6">
-                  <p className="text-[#3D3D3D] text-xl">
-                    {item.scientific_name}
-                  </p>
-                  <h2 className="text-[#46A358] font-bold">${item.genus_id}</h2>
+        <div className="mt-2 relative right-5">
+          <div className="w-[1100px] h-[1px] bg-slate-100"></div>
+          <div className="relative left-6 top-3">
+            <Slider {...settings}>
+              {items.map((item) => (
+                <div className="mt-10" key={item.id}>
+                  <img
+                    src={item.image_url}
+                    alt="img"
+                    className="w-[250px] h-[250px] object-cover"
+                  />
+                  <div className="mt-6">
+                    <p className="text-[#3D3D3D] text-xl">
+                      {item.scientific_name}
+                    </p>
+                    <h2 className="text-[#46A358] font-bold">
+                      ${item.genus_id}
+                    </h2>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@ import Modal from "@mui/material/Modal";
 import { Box, Button } from "@mui/material";
 import { Login } from "../Login/Login";
 import CloseIcon from "@mui/icons-material/Close";
+import {SearchPhone} from "./SearchPhone";
 
 // Style for modal
 const style = {
@@ -26,6 +27,7 @@ const style = {
 
 export const Header = () => {
   const { list } = useSelector((state) => state.cart);
+  console.log(list);
 
   // State to control modal open/close
   const [open, setOpen] = useState(false);
@@ -40,15 +42,14 @@ export const Header = () => {
     <>
       <div className="container fixed top-0 w-full z-10 bg-white">
         <div className="flex justify-between">
-          {/* Navigation links */}
-          <NavLink to="/">
+          <NavLink to="/ " className="hidden sm:block">
             <div className="flex">
               <img src={img1} alt="img" className="mt-6" />
               <h1 className="font-bold text-green-600 mt-8 ml-2">GREENSHOP</h1>
             </div>
           </NavLink>
 
-          <div className="mt-8">
+          <div className="mt-8 hidden sm:block">
             <ul className="flex space-x-12">
               <li>
                 <NavLink
@@ -91,22 +92,22 @@ export const Header = () => {
           {/* Icons */}
           <div className="flex space-x-7 mt-6 relative right-20">
             {/* Search icon */}
-            <div>
+            <div className="hidden sm:block">
               <SearchIcon />
             </div>
             {/* Cart icon */}
             <div>
-              <NavLink to="/shop/shoppingcard">
+              <NavLink to="/shop" className="hidden sm:block">
                 <LocalGroceryStoreOutlinedIcon />
               </NavLink>
-              <div className="w-[15px] h-[13px] rounded-[50%] bg-green-600 relative bottom-7 left-4">
+              <div className="w-[15px] hidden sm:block h-[13px] rounded-[50%] bg-green-600 relative bottom-7 left-4">
                 <span className="text-white text-[11px] left-[5px] relative bottom-2">
                   {list?.length}
                 </span>
               </div>
             </div>
             {/* Login button */}
-            <div>
+            <div className="hidden sm:block">
               <button
                 className="w-[100px] h-[35px] bg-green-600 rounded-lg text-white"
                 onClick={handleOpen}
@@ -119,8 +120,12 @@ export const Header = () => {
           </div>
           {/* Icons */}
         </div>
+
+        <div className="block sm:hidden relative right-[10px]">
+          <SearchPhone />
+        </div>
         {/* Divider */}
-        <div className="w-[1100px] h-[1px] bg-gray-100 mt-2"></div>
+        <div className="w-[1100px] h-[1px] bg-gray-100 mt-2 hidden sm:block "></div>
         {/* Divider */}
 
         {/* Modal */}
@@ -137,13 +142,9 @@ export const Header = () => {
                 <CloseIcon className="text-[#46A358]" />
               </div>
             </Button>
-            {/* Close button */}
-            {/* Login component */}
             <Login />
-            {/* Login component */}
           </Box>
         </Modal>
-        {/* Modal */}
       </div>
     </>
   );

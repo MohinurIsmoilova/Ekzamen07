@@ -11,6 +11,7 @@ export const productData = [
         author: "Lam.",
         status: "accepted",
         rank: "species",
+        lorem:"The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
         family_common_name: null,
         genus_id: 3519,
         image_url:
@@ -70,6 +71,7 @@ export const productData = [
         bibliography: "Sp. Pl.: 984 (1753)",
         author: "L.",
         status: "accepted",
+        lorem:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
         rank: "species",
         family_common_name: null,
         genus_id: 5550,
@@ -95,6 +97,7 @@ export const productData = [
         scientific_name: "Dactylis glomerata",
         year: 1753,
         bibliography: "Sp. Pl.: 71 (1753)",
+        lorem:"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance",
         author: "L.",
         status: "accepted",
         rank: "species",
@@ -126,6 +129,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 113 (1753)",
         author: "L.",
+        lorem:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -241,6 +245,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 899 (1753)",
         author: "L.",
+        lorem:"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
         status: "accepted",
         rank: "species",
         family_common_name: "Aster family",
@@ -276,6 +281,7 @@ export const productData = [
         rank: "species",
         family_common_name: null,
         genus_id: 1872,
+        lorem:" These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains",
         image_url:
           "https://arundobioenergy.com/wp-content/uploads/forget-me-not-1365857_1280.jpg",
         synonyms: ["Trifolium repens var. maculatum", "Amoria repens"],
@@ -297,6 +303,7 @@ export const productData = [
         author: "L.",
         status: "accepted",
         rank: "species",
+        lorem:" Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat",
         family_common_name: null,
         genus_id: 11081,
         image_url:
@@ -356,6 +363,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 554 (1753)",
         author: "L.",
+        lorem:" But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -425,6 +433,7 @@ export const productData = [
         status: "accepted",
         rank: "species",
         family_common_name: null,
+        lorem:" Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur",
         genus_id: 3519,
         image_url:
           "https://www.gardenia.net/wp-content/uploads/2023/05/Main-Sunflower-Types-for-your-Garden-780x520.webp",
@@ -453,6 +462,7 @@ export const productData = [
         author: "L.",
         status: "accepted",
         rank: "species",
+        lorem:"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
         family_common_name: null,
         genus_id: 10999,
         image_url:
@@ -682,6 +692,7 @@ export const productData = [
         author: "L.",
         status: "accepted",
         rank: "species",
+        lorem:" Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. ",
         family_common_name: "Olive family",
         genus_id: 10598,
         image_url:
@@ -701,6 +712,7 @@ export const productData = [
         slug: "cirsium-arvense",
         scientific_name: "Cirsium arvense",
         year: 1771,
+        lorem:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
         bibliography: "Fl. Carniol., ed. 2, 2: 126 (1771)",
         author: "(L.) Scop.",
         status: "accepted",
@@ -732,6 +744,7 @@ export const productData = [
         year: 1785,
         bibliography: "Encycl. 1: 723 (1785)",
         author: "Lam.",
+        lorem:"Maecenas id nunc posuere, porttitor sem consectetur, eleifend eros. Nullam congue justo id tristique hendrerit. Vivamus purus magna, maximus vel porta id, efficitur commodo justo. Cras sed porta magna, ut lobortis ex. Pellentesque ex augue, consectetur non auctor eu, aliquet ac risus. Integer vel molestie nisl. Cras tortor metus, ultrices vitae arcu at, viverra molestie nunc. Curabitur mattis libero nec sapien commodo venenatis. Pellentesque mi dui, tincidunt eu enim quis, tempor aliquet lectus. Duis tincidunt, nulla vel vulputate imperdiet, metus dolor ultrices eros, non vulputate elit arcu quis nulla. Nullam et facilisis ipsum, et lacinia magna. Nullam ac nunc sapien. Proin porttitor convallis leo, quis consequat nulla cursus a. Vivamus pharetra fringilla ipsum. Maecenas tortor enim, gravida at blandit ac, bibendum eget nunc. Vivamus orci eros, cursus lobortis lobortis id, dapibus quis tortor.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -795,6 +808,7 @@ export const productData = [
         status: "accepted",
         rank: "species",
         family_common_name: null,
+        lorem:"Etiam augue dolor, tempus a porttitor quis, faucibus sed felis. Morbi interdum eros lorem, non congue tellus consequat vitae. Aenean sed est luctus, pellentesque dui id, sagittis lacus. In eget odio ac lectus mollis tempus id id neque. Maecenas ex nisi, facilisis aliquam lacinia dictum, hendrerit ac ipsum. Curabitur venenatis metus at magna tempus, eu fermentum est commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         genus_id: 5500,
         image_url:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfNjbdPviIYjJW3qVMLcoMnXn5m27nqi51Mj3VW0dP_g&s",
@@ -819,6 +833,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 71 (1753)",
         author: "L.",
+        lorem:"Pellentesque iaculis sapien ac diam lobortis, sed condimentum turpis feugiat. In hac habitasse platea dictumst. Nam feugiat nisi tempor leo suscipit, non elementum urna molestie. In et tincidunt arcu. Nam pretium nibh sit amet quam viverra interdum. Pellentesque luctus finibus dui fringilla placerat. Praesent semper nisi ut nunc molestie, sit amet placerat magna vehicula. Vivamus luctus fermentum sapien, at efficitur ligula. Nulla a aliquam justo. Etiam at consequat diam. Nullam faucibus sollicitudin dolor, et laoreet sem. Vivamus imperdiet mollis dolor ac dignissim. Suspendisse viverra semper vehicula. Maecenas enim augue, sagittis nec dui nec, blandit faucibus magna. Duis gravida, velit ac vulputate pharetra, metus nisi iaculis quam, non fermentum sem diam a ligula.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -849,6 +864,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 113 (1753)",
         author: "L.",
+        lorem:"Sed egestas lorem quis justo sollicitudin tincidunt. Duis ex ante, consectetur ac felis sit amet, posuere volutpat dui. Sed non nulla efficitur, convallis est id, elementum velit. Nam commodo egestas fringilla. Vivamus magna elit, commodo quis convallis eget, ultricies ut enim. Vivamus vulputate turpis id ligula pharetra ullamcorper. Pellentesque vel orci velit. Nunc ornare dui nibh, a pretium nisl consectetur a. Fusce ultrices eros et ullamcorper interdum.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -966,6 +982,7 @@ export const productData = [
         author: "L.",
         status: "accepted",
         rank: "species",
+        lorem:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
         family_common_name: "Aster family",
         genus_id: 250,
         image_url:
@@ -999,6 +1016,7 @@ export const productData = [
         rank: "species",
         family_common_name: null,
         genus_id: 1802,
+        lorem:"Morbi auctor semper nisl ut ultricies. Nam id sollicitudin velit. Phasellus at tellus quis lorem ullamcorper convallis. Mauris viverra est consectetur massa elementum tincidunt. Pellentesque consequat at odio ut blandit. Aliquam nunc metus, venenatis quis erat et, venenatis hendrerit urna. Nunc ligula ex, semper a pulvinar non, hendrerit nec orci. Mauris non ligula imperdiet, sodales erat at, commodo turpis. Aliquam diam dolor, molestie nec tincidunt in, euismod hendrerit tortor.",
         image_url:
           "https://bs.plantnet.org/image/o/170ca6a6020d9e9f95f86112577aeabcb23f5b96",
         synonyms: ["Trifolium repens var. maculatum", "Amoria repens"],
@@ -1021,6 +1039,7 @@ export const productData = [
         status: "accepted",
         rank: "species",
         family_common_name: null,
+        lorem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis odio nisi. Fusce quam ante, volutpat et erat at, consequat feugiat arcu. Nullam laoreet, augue id mollis semper, dolor massa tincidunt ante, sed venenatis lacus urna consectetur ipsum. Curabitur at orci sit amet ante condimentum facilisis. Phasellus id suscipit elit, nec condimentum quam. Sed eget nibh ultrices, sodales mauris eu, vestibulum felis. Ut sed lorem eget neque accumsan ultricies.",
         genus_id: 11051,
         image_url:
           "https://bs.plantnet.org/image/o/c0800816e2f56ed6e7702c31efd91afcdfddd68c",
@@ -1079,6 +1098,7 @@ export const productData = [
         year: 1753,
         bibliography: "Sp. Pl.: 768 (1753)",
         author: "L.",
+        lorem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis odio nisi. Fusce quam ante, volutpat et erat at, consequat feugiat arcu. Nullam laoreet, augue id mollis semper, dolor massa tincidunt ante, sed venenatis lacus urna consectetur ipsum. Curabitur at orci sit amet ante condimentum facilisis. Phasellus id suscipit elit, nec condimentum quam. Sed eget nibh ultrices, sodales mauris eu, vestibulum felis. Ut sed lorem eget neque accumsan ultricies.",
         status: "accepted",
         rank: "species",
         family_common_name: null,
@@ -1103,6 +1123,7 @@ export const productData = [
         bibliography: "Sp. Pl.: 998 (1753)",
         author: "L.",
         status: "accepted",
+        lorem:"Sed egestas lorem quis justo sollicitudin tincidunt. Duis ex ante, consectetur ac felis sit amet, posuere volutpat dui. Sed non nulla efficitur, convallis est id, elementum velit. Nam commodo egestas fringilla. Vivamus magna elit, commodo quis convallis eget, ultricies ut enim. Vivamus vulputate turpis id ligula pharetra ullamcorper. Pellentesque vel orci velit. Nunc ornare dui nibh, a pretium nisl consectetur a. Fusce ultrices eros et ullamcorper interdum.",
         rank: "species",
         family_common_name: null,
         genus_id: 11983,
@@ -1197,6 +1218,7 @@ export const productData = [
         slug: "juncus-effusus",
         scientific_name: "Juncus effusus",
         year: 1753,
+        lorem:"Morbi auctor semper nisl ut ultricies. Nam id sollicitudin velit. Phasellus at tellus quis lorem ullamcorper convallis. Mauris viverra est consectetur massa elementum tincidunt. Pellentesque consequat at odio ut blandit. Aliquam nunc metus, venenatis quis erat et, venenatis hendrerit urna. Nunc ligula ex, semper a pulvinar non, hendrerit nec orci. Mauris non ligula imperdiet, sodales erat at, commodo turpis. Aliquam diam dolor, molestie nec tincidunt in, euismod hendrerit tortor.",
         bibliography: "Sp. Pl.: 326 (1753)",
         author: "L.",
         status: "accepted",
@@ -1233,6 +1255,7 @@ export const productData = [
         rank: "species",
         family_common_name: null,
         genus_id: 6311,
+        lorem:"The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
         image_url:
           "https://bs.plantnet.org/image/o/43c58aa2ef3d5a11ac1dd83d9b465e639338a3da",
         synonyms: ["Ranunculastrum acre"],
@@ -1254,6 +1277,7 @@ export const productData = [
         author: "Jacq.",
         status: "accepted",
         rank: "species",
+        lorem:"Sed egestas lorem quis justo sollicitudin tincidunt. Duis ex ante, consectetur ac felis sit amet, posuere volutpat dui. Sed non nulla efficitur, convallis est id, elementum velit. Nam commodo egestas fringilla. Vivamus magna elit, commodo quis convallis eget, ultricies ut enim. Vivamus vulputate turpis id ligula pharetra ullamcorper. Pellentesque vel orci velit. Nunc ornare dui nibh, a pretium nisl consectetur a. Fusce ultrices eros et ullamcorper interdum.",
         family_common_name: "Rose family",
         genus_id: 12152,
         image_url:
@@ -1619,6 +1643,7 @@ export const productData = [
         author: "L.",
         status: "accepted",
         rank: "species",
+        lorem:"Sed egestas lorem quis justo sollicitudin tincidunt. Duis ex ante, consectetur ac felis sit amet, posuere volutpat dui. Sed non nulla efficitur, convallis est id, elementum velit. Nam commodo egestas fringilla. Vivamus magna elit, commodo quis convallis eget, ultricies ut enim. Vivamus vulputate turpis id ligula pharetra ullamcorper. Pellentesque vel orci velit. Nunc ornare dui nibh, a pretium nisl consectetur a. Fusce ultrices eros et ullamcorper interdum.",
         family_common_name: null,
         genus_id: 5298,
         image_url:
@@ -1648,6 +1673,7 @@ export const productData = [
         status: "accepted",
         rank: "species",
         family_common_name: null,
+        lorem:"Curabitur aliquam lorem eget erat ultrices dictum. In et dui gravida, eleifend arcu at, suscipit felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ut diam pharetra, interdum purus et, accumsan dui. Sed tincidunt, justo sit amet placerat viverra, augue ante bibendum massa, ac sagittis quam augue in nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consequat dolor sit amet nisi aliquam, ac imperdiet metus dapibus. Mauris pellentesque urna et odio hendrerit, et ultrices enim euismod. ",
         genus_id: 8012,
         image_url:
           "https://d2seqvvyy3b8p2.cloudfront.net/04a6d1e14c82502b58222574e2a99cde.jpg",
@@ -1777,6 +1803,7 @@ export const productData = [
         rank: "species",
         family_common_name: "Rose family",
         genus_id: 12148,
+        lorem:"Mauris viverra est consectetur massa elementum tincidunt. Pellentesque consequat at odio ut blandit. Aliquam nunc metus, venenatis quis erat et, venenatis hendrerit urna. Nunc ligula ex, semper a pulvinar non, hendrerit nec orci. Mauris non ligula imperdiet, sodales erat at, commodo turpis. Aliquam diam dolor, molestie nec tincidunt in, euismod hendrerit tortor.",
         image_url:
           "https://bs.plantnet.org/image/o/53c73903dc455a3d734b193dad7d9d8c4ec0e324",
         synonyms: [

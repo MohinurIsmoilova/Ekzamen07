@@ -19,8 +19,42 @@ export const cartSlice = createSlice({
       } else{
         state.list.push(action.payload)
       }
+      //
+      state.total=state.list.reduce((sum, book)=>sum + +book?.price * book?.quantity, 0)
     },
+
+      updateQuantity(state,action){
+      const check=state.list.findIndex(book=>book.id === action.payload.id)
+      if(check !== -1){
+        state.list[check].quantity += action.payload.quantity
+      }
+      state.total = state.list.reduce((sum, book)=>sum + +book?.price * book?.quantity, 0)
+    },
+
+      removeItem(state, action){
+      state.list=state.list.filter(book=>book.id !== action.payload.id)
+      state.total = state.list.reduce(
+        (sum, book) => sum + +book?.price * book?.quantity,
+        0
+      );
+
+    }
   },
 });
-export const { addcount } = cartSlice.actions;
+export const { addcount, updateQuantity, removeItem  } = cartSlice.actions;
 export default cartSlice.reducer;
+
+//   initialState: {
+//     addedItems: [],
+//   },
+//   reducers: {
+//     addCartItem: (state, action) => {
+//       state.addedItems.push(action.payload);
+//     },
+//   },
+// });
+
+// export const { addCartItem } = cartSlice.actions;
+
+// export const selectAddedItems = (state) => state.cart.addedItems;
+

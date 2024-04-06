@@ -4,15 +4,15 @@ export const Product = () => {
   return (
     <>
       <div className="container">
-        <div className="mt-4 relative right-10">
-          <p className="text-[#727272]">
+        <div className="mt-4 relative right-10 w-[109%]">
+          <p className="text-[#727272] text-[14px]">
             The ceramic cylinder planters come with a wooden stand to help
             elevate your plants off the ground. The ceramic cylinder planters
             come with a wooden stand to help elevate your plants off the ground.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
             fringilla augue nec est tristique auctor. Donec non est at libero
             vulputate rutrum. Morbi ornare lectus quis justo gravida semper.
-            Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.{" "}
+            Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
             <br /> <br /> Pellentesque aliquet, sem eget laoreet ultrices, ipsum
             metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac
             tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget
@@ -25,16 +25,20 @@ export const Product = () => {
             with a wooden stand to help elevate your plants off the ground.
           </p>
 
-          <h2 className="font-bold text-[#3D3D3D] mt-5">Living Room:</h2>
-          <p className="text-[#727272] mt-2">
+          <h2 className="font-bold text-[#3D3D3D] mt-5 text-[14px]">
+            Living Room:
+          </h2>
+          <p className="text-[#727272] mt-2 text-[14px] leading-6">
             The ceramic cylinder planters come with a wooden stand to help
             elevate your plants off the ground. The ceramic cylinder planters
             come with a wooden stand to help elevate your plants off the ground.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
 
-          <h2 className="font-bold text-[#3D3D3D] mt-5">Dining Room:</h2>
-          <p className="text-[#727272] mt-2">
+          <h2 className="font-bold text-[#3D3D3D] mt-5 leading-6 text-[14px]">
+            Dining Room:
+          </h2>
+          <p className="text-[#727272] mt-2 text-[14px]">
             The benefits of houseplants are endless. In addition to cleaning the
             air of harmful toxins, they can help to improve your mood, reduce
             stress and provide you with better sleep. Fill every room of your
@@ -42,8 +46,8 @@ export const Product = () => {
             your life.
           </p>
 
-          <h2 className="font-bold text-[#3D3D3D] mt-5">Office:</h2>
-          <p className="text-[#727272] mt-2">
+          <h2 className="font-bold text-[#3D3D3D] mt-5 text-[14px]">Office:</h2>
+          <p className="text-[#727272] mt-2 text-[14px]">
             The ceramic cylinder planters come with a wooden stand to help
             elevate your plants off the ground. The ceramic cylinder planters
             come with a wooden stand to help elevate your plants off the ground.

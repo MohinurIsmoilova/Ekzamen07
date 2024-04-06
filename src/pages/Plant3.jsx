@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { useDispatch, useSelector } from "react-redux";
 import { addcount } from "../features/cartSlice";
+import { Link } from "react-router-dom";
 
-export const Plant3 = ({ currentPage, itemsPerPage }) => {
+export const Plant3 = ({ currentPage, itemsPerPage, sortType }) => {
   const dispatch = useDispatch();
 
   const handleAddCart = (data) => {
@@ -21,8 +22,25 @@ export const Plant3 = ({ currentPage, itemsPerPage }) => {
 
   const items = useSelector((state) => state.cart.items[0].data);
 
+  const [sortedItems, setSortedItems] = useState([]);
   const [hoveredItem, setHoveredItem] = useState(null); // State to track hovered item
   const [likedItems, setLikedItems] = useState({}); // State to track liked items
+
+  useEffect(() => {
+    let sortedItemsCopy = [...items]; // Create a copy of the items array
+    if (sortType === "A-Z") {
+      sortedItemsCopy.sort((a, b) =>
+        a.common_name.localeCompare(b.common_name),
+      );
+    } else if (sortType === "Z-A") {
+      sortedItemsCopy.reverse();
+    }
+    setSortedItems(sortedItemsCopy);
+  }, [sortType, items]); // Update when sortType or items change
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = sortedItems.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleFavoriteClick = (itemId) => {
     setLikedItems((prevLikedItems) => ({
@@ -30,10 +48,6 @@ export const Plant3 = ({ currentPage, itemsPerPage }) => {
       [itemId]: !prevLikedItems[itemId],
     }));
   };
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <>
@@ -49,11 +63,13 @@ export const Plant3 = ({ currentPage, itemsPerPage }) => {
                   {item.status}
                 </button>
               </div>
-              <img
-                src={item.image_url}
-                alt="img"
-                className="w-[250px] h-[250px] object-cover"
-              />
+              <Link to={`/shop/${item.id}`}>
+                <img
+                  src={item.image_url}
+                  alt="img"
+                  className="h-[250px] w-[250px] object-cover"
+                />
+              </Link>
 
               <div className="relative">
                 <div className="mt-8 h-[100px] absolute top-[-78px] left-4 translate-x-[50%]">

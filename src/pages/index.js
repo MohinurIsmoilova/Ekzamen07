@@ -12,5 +12,6 @@ import { Review } from "./Review";
 import { SecondCarousel } from "./SecondCarousel";
 import { ShoppingCard } from "./ShoppingCard";
 import { PlantsDetails } from "./PlantsDetails";
+import { ShopCard } from "./ShopCard";
 
-export {Home , PlantsDetails, ShoppingCard, SecondCarousel, Product, Review, Plant1, Plant2, Plant3, New, Sale, Blogs , Plant , Shop}
+export {Home , ShopCard, PlantsDetails, ShoppingCard, SecondCarousel, Product, Review, Plant1, Plant2, Plant3, New, Sale, Blogs , Plant , Shop}
