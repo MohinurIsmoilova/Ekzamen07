@@ -11,7 +11,11 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
-            {/* <Route path="/shop/shoppingcard" element={<ShoppingCard />} /> */}
+
+
+            <Route path="/shop/shoppingcard" element={<ShoppingCard />} />
+
+            
             <Route path="/shop/:id" element={<ShoppingCard />} />
             <Route path="/shop/register" element={<RegisterPage/>} />
             <Route path="/plant" element={<Plant />} />
