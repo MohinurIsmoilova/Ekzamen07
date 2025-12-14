@@ -14,8 +14,8 @@ function App() {
 
 
             <Route path="/shop/shoppingcard" element={<ShoppingCard />} />
+            <h1>hello</h1>
 
-            
             <Route path="/shop/:id" element={<ShoppingCard />} />
             <Route path="/shop/register" element={<RegisterPage/>} />
             <Route path="/plant" element={<Plant />} />
